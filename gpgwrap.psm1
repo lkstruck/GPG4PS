@@ -17,8 +17,7 @@ Switch ($i)
  3 {$key | Add-Member -type NoteProperty -name UserID -Value $item.replace("uid       ","")}
  4 {$key | Add-Member -type NoteProperty -name SubKey -Value $item.replace("sub   ","")
     $returnValue += $key
-    remove-variable key
-    }
+    remove-variable key}
  5 {$key = New-Object psobject
     $i=1}
 }
